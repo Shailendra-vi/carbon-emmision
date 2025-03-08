@@ -30,7 +30,7 @@ interface CarbonState {
 
 export const useCarbonStore = create<CarbonState>()(
   persist(
-    (set, get) => ({
+    (set) => ({
       history: [],
       activeCalculation: {
         id: "",
